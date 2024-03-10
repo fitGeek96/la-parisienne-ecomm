@@ -26,7 +26,7 @@ export const ThemeSelector: React.FC = () => {
   React.useEffect(() => {
     const preference = window.localStorage.getItem(themeLocalStorageKey)
     if (selectRef.current) {
-      selectRef.current.value = preference ?? 'auto'
+      selectRef.current.value = 'light'
       setShow(true)
     }
   }, [])
